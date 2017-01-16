@@ -12,7 +12,7 @@ z = 0j*np.zeros(2*N)
 ha = [0,0]
 hb = [0,0]
 hm = [0,0]
-R = 4*N**.5
+R = 3*N**.5
 for p in range(2):
     pl.subplot(121+p,axisbg='black')
     ax = pl.gca()
@@ -24,10 +24,11 @@ for p in range(2):
     hm[p] = pl.plot(0,0,'o',markersize=12,c='white')[0]
     pl.xlim(-R,R)
     pl.ylim(-R,R)
+pl.tight_layout()
 
 
 for k in range(10000):
-    t = 0.02*k
+    t = 0.01*k
     a = np.exp(2j*np.pi*(nu*t+a0))
     b = np.exp(2j*np.pi*(nu*t+b0))
     b *= 1
