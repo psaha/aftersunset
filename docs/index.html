@@ -23,6 +23,8 @@ than the sun).  The best one can find is
 <a href=https://apod.nasa.gov/apod/ap100106.html target=_blank>this
 fuzzy image of of the star Betelgeuse.</a>  Why is that? </p>
 
+<h3> The problem </h3>
+
 <p> The reason is that no current telescope has the sharpness to
 resolve any star in the night sky.  Telescopes make stars look
 brighter, but they still appear as point of light, or rather as the
@@ -32,14 +34,16 @@ star requires a sufficiently large telescope aperture.  For a star of
 size \(S\) at distance \(D\) seen in light of wavelength \(\lambda\),
 the minimum telescope aperture needed is about
 \[ \frac{\lambda S}D \]
-Betelgeuse has \(S/D\) of about \(3\times10^{-6}\)  That is, it has
-an angular size of 0.3 microradians.  (Recall that a degree is
-\(\pi/180\) radians.  The astronomers' unit of arc-second is a
-degree/360 or 6.7 microradians.  The bar in the picture of Betelgeuse
-marked `10&nbsp;mas' stands for 10 milli-arc-seconds or about 30
-nano-radians.)   For visible light
+Betelgeuse has \(S/D\) of about \(2.5\times10^{-6}\).  That is, its
+angular size is about \(2.5\times10^{-6}\) radians.  Astronomers like
+to measure small sizes in arc-seconds, which is 1/3600 of a degree.
+Since a degree is \(\pi/180\) radians, and arc-second is about
+5&nbsp;micro-radians.  Thus, in astronomers' units, the angular size
+of Betelgeuse is about 0.05 arc-seconds.  The bar in the picture of
+Betelgeuse marked `10&nbsp;mas' stands for 10 milli-arc-seconds.
+Red light has a \(\lambda\) of about 0.8 micro-metres.  Thus
 \[ \frac{\lambda S}D \approx 3\rm\,metres \]
-for Betelgeuse.  Now ground-based telescopes have to contend with
+for Betelgeuse in red light.  Ground-based telescopes have to contend with
 turbulence in the atmosphere, which prevents them reaching their
 diffraction limit.  Only space telescopes achieve their diffraction
 limit.  The Hubble Space Telescope is not wide enough to resolve
@@ -49,7 +53,45 @@ target=_blank> James Webb Space Telescope</a> will just about manage.
 And that's just for Betelgeuse, which has an exceptionally large
 angular size.  For most stars, you'd need a 100 metre aperture just to
 resolve them.  And to resolve interesting features on their surface,
-apertures of a kilometre of more would be needed.  It seems hopeless. </p>
+apertures of a kilometre or more would be needed.  It seems hopeless. </p>
+
+<h3> Interferometers </h3>
+
+<p> Fortunately, the aperture of a telescope can have gaps in it.  In
+fact, it can be mostly gaps.  That is, a few telescope elements spread
+over an area (say) a kilometre across can achieve the same resolution
+as a telescope a kilometre wide.  The light-gathering power will be
+much less, of course.  But the resolving power will be the same,
+provided the optical paths between all the elements are maintained in
+phase.  Such telescopes are known as interferometers, and indeed are
+related to Michelson interferometers in optics labs. </p>
+
+<p> Interferometric telescopes are standard at radio wavelengths.  The
+most ambitious is the
+<a href=https://en.wikipedia.org/wiki/Square_Kilometre_Array>Square
+Kilometre Array</a> which is under development now.  It will have a
+collecting area of about a square kilometre, but an effective
+stretching across Africa and to Australia.  It will have spectacular
+resolving power for radio sources in the sky, but it won't see stars,
+because stars don't have much radio-frequency emission.  Astronomical
+interferometers at optical wavelengths also exist, for
+example <a href='http://sydney.edu.au/science/physics/research/sifa/susi/'>the
+Sydney University Stellar Interferometers (SUSI)</a> but none has gone
+to kilometre baselines.  Keeping the optical paths coherent over that
+kind of baseline is very difficult. </p>
+
+<h3> An idea </h3>
+
+<p> There is, however, another kind of interferometry, which
+side-steps the challenge of keeping the optical paths coherent.  It
+has different names, intensity interferometry, the
+<a href='https://en.wikipedia.org/wiki/Hanbury_Brown_and_Twiss_effect'>Hanbury
+Brown and Twiss effect</a> or just HBT.  It is interferometry with
+partially coherent light.  It requires much more light than ordinary
+interferometers, but it does not require optical paths to be precise
+to a wavelength.  They need to more accurate than the time-resolution
+for detecting photons.  With current technology that means about a
+millimetre, but much worse can be tolerated. </p>
 
 <p> <a href=https://en.wikipedia.org/wiki/Odeillo_solar_furnace
 target=_blank>Odeillo</a> </p>
