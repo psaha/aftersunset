@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<link rel="stylesheet" href="base.css" type="text/css"/>
+<title>Moonlighting with solar-power collectors</title>
+</head>
+<body>
+
+<h1>Moonlighting with solar-power collectors</h1>
+
+<p> The night sky is the source of countless beautiful pictures, and
+there is no grander collection than the archive of
+<a href=https://apod.nasa.gov/apod/lib/aptree.html
+target=_blank>Astronomy Picture of the Day.</a>  Over two decades,
+they have shown everything from planets and moons to star-clusters to
+galaxies to the largest scales of the observable Universe. One
+category of astronomy pictures, however, is curiously lacking:
+pictures of individual stars (other than the sun).  The best one can
+find is <a href=https://apod.nasa.gov/apod/ap100106.html
+target=_blank>this fuzzy image of the star Betelgeuse.</a>  Why is
+that? </p>
+
+<h3> The problem </h3>
+
+<p> The reason is that no current telescope has the sharpness to
+resolve any star in the night sky.  Telescopes make stars look
+brighter, but they still appear as point of light, or rather as the
+diffraction pattern of a point source through the optics of a
+telescope.  Resolving such a diffraction pattern into a picture of a
+star requires a sufficiently large telescope aperture.  For a star of
+size \(S\) at distance \(D\) seen in light of wavelength \(\lambda\),
+the minimum telescope aperture needed is about
+\[ \frac{\lambda S}D \]
+Betelgeuse has \(S/D\) of about \(2.5\times10^{-6}\).  That is, its
+angular size is about \(2.5\times10^{-6}\) radians.  Astronomers like
+to measure small sizes in arc-seconds, which is 1/3600 of a degree.
+Since a degree is \(\pi/180\) radians, and arc-second is about
+5&nbsp;micro-radians.  Thus, in astronomers' units, the angular size
+of Betelgeuse is about 0.05 arc-seconds.  The bar in the picture of
+Betelgeuse marked `10&nbsp;mas' stands for 10 milli-arc-seconds.
+Red light has a \(\lambda\) of about 0.8 micro-metres.  Thus
+\[ \frac{\lambda S}D \approx 3\rm\,metres \]
+for Betelgeuse in red light.  Ground-based telescopes have to contend with
+turbulence in the atmosphere, which prevents them reaching their
+diffraction limit.  Only space telescopes achieve their diffraction
+limit.  The Hubble Space Telescope is not wide enough to resolve
+Betelgeuse, but its successor, the
+<a href=https://en.wikipedia.org/wiki/James_Webb_Space_Telescope
+target=_blank>JWST</a> will just about manage.
+And that's just for Betelgeuse, which has an exceptionally large
+angular size.  For most stars, you'd need a 100 metre aperture just to
+resolve them.  And to resolve interesting features on their surface,
+apertures of a kilometre or more would be needed.  It seems
+hopeless. </p>
+
+<h3> Interferometers </h3>
+
+<p> Fortunately, the aperture of a telescope can have gaps in it.  In
+fact, it can be mostly gaps.  That is, a few telescope elements spread
+over an area (say) a kilometre across can achieve the same resolution
+as a telescope a kilometre wide.  The light-gathering power will be
+much less, of course.  But the resolving power will be the same,
+provided the optical paths between all the elements are maintained in
+phase.  Such telescopes are known as interferometers, and indeed are
+related to Michelson interferometers in optics labs. </p>
+
+<p> Interferometric telescopes are standard at radio wavelengths.  The
+most ambitious is the
+<a href=https://en.wikipedia.org/wiki/Square_Kilometre_Array
+target=_blank>Square Kilometre Array</a> which is under development
+now.  It will have a collecting area of about a square kilometre, but
+an effective aperture stretching across Africa and to Australia.  It
+will have spectacular resolving power for radio sources in the sky,
+but it won't see stars, because stars don't have much radio-frequency
+emission.  Astronomical interferometers at optical wavelengths also
+exist, for example
+<a href='http://sydney.edu.au/science/physics/research/sifa/susi/'
+target=_blank>the Sydney University Stellar Interferometers
+(SUSI).</a>  A similar instrument (the now-decommissioned IOTA)
+obtained the image of Betelgeuse linked above.  None of these has gone
+to kilometre baselines.  Keeping the optical paths coherent over that
+kind of baseline is very difficult. </p>
+
+<p> There is, however, another kind of interferometry, which
+side-steps the challenge of keeping the optical paths coherent.  It
+has different names, intensity interferometry, the
+<a href='https://en.wikipedia.org/wiki/Hanbury_Brown_and_Twiss_effect'
+target=_blank>Hanbury Brown and Twiss effect</a> or just HBT.  It is
+interferometry with partially coherent light.  It requires much more
+light than ordinary interferometers, but it does not require optical
+paths to be precise to a wavelength.  They need to more accurate than
+the time-resolution for detecting photons.  The fastest photon
+counters nowadays have response times of maybe 10&nbsp;picoseconds.
+So optical paths good to a millimetre are good enough.  Less precise
+is not fatal, but it does degrade the signal, so more observation time
+is needed to build up a desired signal-to-noise. </p>
+
+<p style="overflow: hidden">
+<img src='http://sydney.edu.au/science/physics/images/content/research/sifa/sifa/nsii.jpg'
+style="float: right; padding: 0em 1em;"/> A stellar interferometer
+using partially coherent light was built by Hanbury Brown and
+colleagues in the 1960s.  In fact, it pre-dates the SUSI.  This great
+instrument had two six-metre mirrors movable over a railway track out
+to a separation of 120&nbsp;metres.  The photon-detector technology of
+the time was, however, primitive compare to today's.  As a result, the
+instrument succeeded in measuring the sizes of about 30 stars, after
+which it ran out of stars bright enough for it to study, and was
+dismantled.  There is interest
+<a href='https://arxiv.org/abs/1607.03490' target=_blank>reviving the
+idea</a> with modern photon detectors and going to kilometre
+baselines.  But there is no specific plan so far. </p>
+
+<h3> An idea </h3>
+
+<p> Collecting light and bringing it to a focus, without trying for
+optical coherence, has of course another and better-known application.
+The <a href=https://en.wikipedia.org/wiki/Odeillo_solar_furnace
+target=_blank>Odeillo solar furnace</a> has been doing it for half a
+century.  So do many other installations, which focus solar power to
+run a heat engine to generate electricity.  And they are all just
+lying around at night.  Could solar collectors be repurposed to
+usefully gather starlight for astronomy after sunset?  Could
+solar-power collectors moonlight as interferometers? </p>
+
+<p> This suggestion, due to
+<a href='https://astro.uni-bonn.de/~wucknitz/' target=_blank>Olaf Wucknitz,</a> is just a crazy idea at the
+moment, and nobody is actively working in it.  There is, however, a
+community of researchers working in the general area who will pay
+attention if the crazy idea becomes more realistic.  The research
+questions below suggest some ways towards making the idea more
+realistic. </p>
+
+<p> Development of such an interferometer would take years of work by
+many people, not to mention substantial investment.  On the other
+hand, a credible design concept for an instrument to image the
+surfaces of stars far better than even the mighty JWST could do, and
+that while subsidising its own construction by putting electricity
+into the grid, should be pretty much unstoppable. </p>
+
+<h2>Interference with partially-coherent light</h2>
+
+<p> We know from wave optics that light from two or more sources comes
+together, the amplitudes add.  But in our ordinary experience,
+intensities add.  But intensity is amplitude squared.  How can they
+both add?? </p>
+
+<p> The answer to this conundrum is not difficult, but it tells us
+something very important about interference, which isn't in
+old-fashioned optics textbooks. </p>
+
+<p style="overflow: hidden">
+<video width="400" controls loop style="float: right; padding: 0em 1em;">
+<source src="ampins1.mp4" type="video/mp4">
+</video>
+
+In this and the following animations, consider the amplitude and phase
+of light as a single complex number, which we may call the complex
+amplitude.  <br/>
+
+Here we have two monochromatic sources, whose complex amplitudes are
+represented by the two blue lines.  The revolving lines show the
+rotating phase.  The two complex amplitudes are added, and the white
+dot represents the resultant complex amplitude. <br/>
+
+As we can see, the two sources have slightly different frequencies.
+As a result, the two sources sometimes reinforce each other and
+sometimes cancel eath other.  That is, they interfere sometimes
+constructively and sometimes destructively.  The total intensity
+(squared radial distance of the white dot) beats between zero and four
+times the individual intensities.
+</p>
+
+<p style="overflow: hidden">
+<video width="400" controls loop style="float: right; padding: 0em 1em;">
+<source src="ampins2.mp4" type="video/mp4">
+</video>
+Here we have 20 light sources, with slightly different frequencies.
+This corresponds to narrow-band or partially-coherent light. <br/>
+
+The white dot is, in effect, the endpoint of a 20-step random walk in
+the complex plane.  Its typical length is \(\sqrt{20}\) but in the
+animation varies from about twice that to near zero.
+</p>
+
+<p style="overflow: hidden">
+<video width="400" controls loop style="float: right; padding: 0em 1em;">
+<source src="ampins3.mp4" type="video/mp4">
+</video>
+This animation shows a superposition of two composite
+partially-coherent sources (represented by blue and magenta), each of
+which itself consists of 20 coherent sources with slightly different
+frequencies. <br/>
+
+Because of the random-walk-like addition of the complex amplitudes,
+the total amplitude is typically \(\sqrt2\) times as large as it would
+have been with just one of the `blue' or `magenta' sources.  The
+intensity will be twice as large. This is why incoherent light is
+additive in intensities.
+</p>
+
+<p> Below we have two animations.  The left panel is actually the same
+as the previous animation.  In the right panel, all the magenta
+amplitudes have been flipped in sign.  Had all the frequencies been
+the same (that is, had the light been coherent) there would have been
+constructive interference on the left and destructive interference on
+the right.  But what we have with partially coherent light is
+different.  Both intensities vary, but they have a tendency to vary in
+an anti-correlated way.  That is, flipping the sign of the magenta
+causes a statistical anti-correlation in the intensities.  This is the
+Hanbury Brown and Twiss effect, and the basis of interferometry with
+partially coherent light. </p>
+
+<p style="text-align: center">
+<video width="800" controls loop>
+<source src="ampins4.mp4" type="video/mp4">
+</video>
+</p>
+
+<h2>Research questions</h2>
+
+<h3>Which light sources are the most interesting?</h3>
+
+<p> The surface of the sun is pretty plain, but not so (according to
+theory) the surfaces of high-mass stars (including Betelgeuse).  In
+high-mass stars, the internal radiation pressure is much higher than
+the gas pressure.  Indeed, it is radiation that holds up these stars
+and prevents them from collapsing under their own gravity.  Now, when
+you have a light fluid (in this case radiation) holding up a heavier
+fluid (hydrogen and helium gas) you get a turbulent boiling surface.
+The Betelgeuse image linked above hints at this, and would be very
+interesting to observe in detail. </p>
+
+<p> Also important are close binary stars, where material passes from
+one to the other. </p>
+
+<p> Still more exciting, if possible, would be to observe the
+environment of a massive black hole, which is lit up by gas heated up
+just before it falls in, with the event horizon itself forming a
+silhouette.  The best candidate to try and resolve at optical
+wavelengths is the black hole at the centre of the galaxy
+Messier&nbsp;87.  There are ongoing observations of this system with
+<a href='http://adsabs.harvard.edu/abs/2015ApJ...805..179B' target=_blank>
+interferometry at millimetre wavelengths</a> with the eventual aim of
+imaging the shadow cast by the black hole, but they are not there
+yet. </p>
+
+<h3>Which photon counters should one use?</h3>
+
+<p> The basic observable in interferometry with partially coherent
+light is fluctuations in intensity.  The more precisely one can
+measure the individual arrival times of photons, the better.  A
+<a href='https://en.wikipedia.org/wiki/Single-photon_avalanche_diode'
+target=_blank>single-photon avalanche diode (SPAD)</a> is nowadays the
+best type of device for this. </p>
+
+<p> SPAD counters with very good time resolution are available from
+<a href='https://www.picoquant.com/products/category/photon-counting-detectors/pdm-series-single-photon-avalanche-diodes' target=_blank>PicoQuant</a>
+and
+<a href='http://www.idquantique.com/photon-counting/' target=_blank>ID&nbsp;Quantique</a> and maybe other companies. </p>
+
+<p> Since partially coherent light requires a narrow wavelength band,
+one is counting photons only within a very narrow spectral range.
+Ideally, one would like a large array of photon detectors, one for
+each narrow spectral band.
+<a href='http://adsabs.harvard.edu/abs/2014SPIE.9114E..0CT'
+target=_blank>Arrays of SPADs</a> are still experimental but if and
+when they become usable they will provide a big improvement. </p>
+
+<h3>Which solar-energy collectors are best to work with?</h3>
+
+<p> Odeillo has a fixed main mirror, with movable plane mirrors to
+track the sun and reflect it onto the main mirror.  This type of
+design associates different parts of the main mirror with very
+different optical path lengths.  This type of design is fine for a
+solar furnace, but not good for interferometry. </p>
+
+<p> The conceptually simplest design has a parabolic mirror tracking
+the sun, with a closed-cycle heat engine (a Stirling engine) at the
+focus, attached to a dynamo.  As well as home-made examples by DIY
+enthusiasts, there are industrial versions by companies like
+<a href=https://ripassoenergy.com/en/media/ target=_blank>Ripasso
+Energy</a> and
+<a href=http://www.unitedsunsystems.com/products-and-services/
+target=_blank>United Sun Systems.</a> </p>
+
+<p> Stirling engines resemble the imaginary engines we know from
+Carnot's cycle, and are a whole fascinating topic on their own.
+<a href='https://www.youtube.com/watch?v=gQb2sN6UWkA' target=_blank>
+This explanatory video</a> explains how they work.  Stirling engines
+have a reputation for being clean, efficient and low-maintenance, but
+heavy. Heaviness may explain why motor transport has never adopted
+them, but is not an issue when generating electricity. </p>
+
+<h3>How about a prototype?</h3>
+
+<p> It would be interesting to repeat the classic experiment by
+Hanbury Brown and Twiss in 1958
+<a href='http://adsabs.harvard.edu/abs/1958RSPSA.248..222B'
+target=_blank>measuring the angular size of Sirius</a>
+using the same physical effect but modern instruments.  Two
+amateur-class telescopes, equipped with high-end photon detectors and
+electronics, should be up to the task
+<a href='http://adsabs.harvard.edu/abs/2015MNRAS.446.2065W' target=_blank>
+(detailed estimates here).</a>  In fact, even amateur-class telescopes
+would be rather overdoing it, since optical-quality mirrors are not
+necessary here.  Adding small Stirling engines for daytime electricity
+generation would make up a complete prototype. </p>
+
